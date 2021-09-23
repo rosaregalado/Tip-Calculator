@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Tip Calculator</title>
+    <link rel="stylesheet" type="text/css" href="tip-calculator.css">
   </head>
   <body>
     <header>
@@ -11,9 +12,9 @@
       <h2>Bill</h2>
       $ <input id="input-bill" type="number" placeholder="Bill Amount">
       <h2>Tip</h2>
-      % <input id="input-tip" type="number" placeholder="Tip Percent">
+      % <input id="input-tip" type="number" min=1 placeholder="Tip Percent">
       <h2>Number of People</h2>
-      # <input id="input-people" type="number" placeholder="Number of people">
+      # <input id="input-people" type="number" min=1 placeholder="Number of people">
 
     <button id="submit-button">Calculate Tip</button>
 
@@ -29,6 +30,6 @@
         <!--total display-->
       </output>
     </div> 
-
+    <script>src="tip-calculator.js"</script>
   </body>
 </html>
