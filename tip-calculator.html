@@ -4,16 +4,31 @@
     <title>Tip Calculator</title>
   </head>
   <body>
-    <div id="calculator">
-      $<input id="bill" type="number" placeholder="Bill Amount">
-      <input id="tip" type="number" placeholder="Tip Amount">
-      <input id="number-of-people" type="number" placeholder="Number of people">
-      <div id="display-tip">
+    <header>
+      <h1>Tip Calculator</h1>
+    </header>
+    <form id="calculator">
+      <h2>Bill</h2>
+      $ <input id="input-bill" type="number" placeholder="Bill Amount">
+      <h2>Tip</h2>
+      % <input id="input-tip" type="number" placeholder="Tip Percent">
+      <h2>Number of People</h2>
+      # <input id="input-people" type="number" placeholder="Number of people">
+
+    <button id="submit-button">Calculate Tip</button>
+
+    </form>
+
+    <div id="display">
+      <h2>Tip</h2>
+      <output id="display-tip">
         <!-- tip display-->
-      </div>
-      <div id="display-total">
+      </output>
+      <h2>Total</h2>
+      <output id="display-total">
         <!--total display-->
-      </div>
-    </div>
+      </output>
+    </div> 
+
   </body>
 </html>
